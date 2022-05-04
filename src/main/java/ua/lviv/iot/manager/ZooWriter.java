@@ -1,11 +1,6 @@
 package ua.lviv.iot.manager;
 
-import ua.lviv.iot.model.Bird;
-import ua.lviv.iot.model.Nightingale;
-import ua.lviv.iot.model.Peafowl;
-import ua.lviv.iot.model.Stork;
-import ua.lviv.iot.model.Swallow;
-import ua.lviv.iot.model.Swan;
+import ua.lviv.iot.model.*;
 
 import java.io.FileWriter;
 import java.io.IOException;

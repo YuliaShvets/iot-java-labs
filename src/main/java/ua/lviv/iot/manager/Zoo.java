@@ -1,17 +1,13 @@
 package ua.lviv.iot.manager;
-import ua.lviv.iot.model.Bird;
-import ua.lviv.iot.model.Nightingale;
-import ua.lviv.iot.model.Peafowl;
-import ua.lviv.iot.model.Stork;
-import ua.lviv.iot.model.Swallow;
-import ua.lviv.iot.model.Swan;
 
+import ua.lviv.iot.model.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Zoo {
     ArrayList<Bird> birds = new ArrayList<Bird>();
+    ArrayList<Bird> found = new ArrayList<Bird>();
 
     public void addBirds() {
 
@@ -22,8 +18,6 @@ public class Zoo {
         birds.add(new Swallow("Swallow", "black and white", 0.13, 55, 0.379, 4, true, "Swallow"));
 
     }
-
-    ArrayList<Bird> found = new ArrayList<Bird>();
 
     public ArrayList<Bird> foundBirds() {
 
