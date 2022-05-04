@@ -1,5 +1,4 @@
 package ua.lviv.iot.manager;
-
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -11,6 +10,7 @@ import ua.lviv.iot.model.Peafowl;
 import ua.lviv.iot.model.Stork;
 import ua.lviv.iot.model.Swallow;
 import ua.lviv.iot.model.Swan;
+
 
 import java.util.ArrayList;
 import java.util.List;

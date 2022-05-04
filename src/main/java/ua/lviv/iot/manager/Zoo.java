@@ -1,11 +1,11 @@
 package ua.lviv.iot.manager;
-
 import ua.lviv.iot.model.Bird;
 import ua.lviv.iot.model.Nightingale;
 import ua.lviv.iot.model.Peafowl;
 import ua.lviv.iot.model.Stork;
 import ua.lviv.iot.model.Swallow;
 import ua.lviv.iot.model.Swan;
+
 
 import java.util.ArrayList;
 import java.util.Comparator;

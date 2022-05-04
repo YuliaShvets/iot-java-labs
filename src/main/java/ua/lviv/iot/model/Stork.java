@@ -8,6 +8,7 @@ public class Stork extends Bird {
         super(name, colour, weight, speed, feed, lifeTime, isBirdFlying);
         this.typeOfStork = typeOfStork;
     }
+
     @Override
     public String getHeaders() {
         return super.getHeaders() + ", type of stork";

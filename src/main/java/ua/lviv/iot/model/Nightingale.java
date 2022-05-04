@@ -8,6 +8,7 @@ public class Nightingale extends Bird {
         super(name, colour, weight, speed, feed, lifeTime, isBirdFlying);
         this.typeOfNightingale = typeOfNightingale;
     }
+
     @Override
     public String getHeaders() {
         return super.getHeaders() + ", type of nightingale";

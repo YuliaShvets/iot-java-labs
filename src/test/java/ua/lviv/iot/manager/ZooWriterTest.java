@@ -25,7 +25,7 @@ class ZooWriterTest {
         try (FileReader expectedReader = new FileReader("src/test/resources/expected.csv");
              BufferedReader expectedBR = new BufferedReader(expectedReader);
              FileReader actualReader = new FileReader("result.csv");
-             BufferedReader actualBR = new BufferedReader(actualReader);) {
+             BufferedReader actualBR = new BufferedReader(actualReader)) {
             String line1 = expectedBR.readLine();
             String line2 = actualBR.readLine();
             ZooWriter.writeCSV();

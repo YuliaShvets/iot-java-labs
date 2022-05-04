@@ -8,6 +8,7 @@ public class Peafowl extends Bird {
         super(name, colour, weight, speed, feed, lifeTime, isBirdFlying);
         this.typeOfPeafowl = typeOfPeafowl;
     }
+
     @Override
     public String getHeaders() {
         return super.getHeaders() + ", type of peafowl";

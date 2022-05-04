@@ -8,6 +8,7 @@ public class Swallow extends Bird {
         super(name, colour, weight, speed, feed, lifeTime, isBirdFlying);
         this.typeOfSwallow = typeOfSwallow;
     }
+
     @Override
     public String getHeaders() {
         return super.getHeaders() + ", type of swallow";
