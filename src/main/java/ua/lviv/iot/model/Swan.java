@@ -8,4 +8,14 @@ public class Swan extends Bird {
         super(name, colour, weight, speed, feed, lifeTime, isBirdFlying);
         this.typeOfSwan = typeOfSwan;
     }
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + ", type of swan";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + ", " + typeOfSwan;
+    }
 }
+
