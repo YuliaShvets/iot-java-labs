@@ -1,4 +1,9 @@
 
+Task 3 :
+- Add maven support to the project
+- mvn clean package
+
+
 Task 2 :
 - Implement sorting of objects (ascending and descending).
 - Search for an object by field.
@@ -10,4 +15,5 @@ Task 1 :
 - Java code convention
 - You should properly divide classes into packages.
 - The consol menu should be minimal.
+
 
