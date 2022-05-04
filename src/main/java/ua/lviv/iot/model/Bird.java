@@ -14,6 +14,10 @@ public class Bird {
         return isBirdFlying;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public double getWeight() {
         return weight;
     }
