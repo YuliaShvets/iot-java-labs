@@ -13,7 +13,8 @@ import java.io.IOException;
 class ZooWriterTest {
 
     @BeforeEach
-    void setUp() {
+    void setUp() throws IOException{
+        ZooWriter.writeCSV();
     }
 
     @AfterEach
@@ -28,7 +29,6 @@ class ZooWriterTest {
              BufferedReader actualBR = new BufferedReader(actualReader)) {
             String line1 = expectedBR.readLine();
             String line2 = actualBR.readLine();
-            ZooWriter.writeCSV();
             Assertions.assertEquals(line1, line2);
         }
     }

@@ -29,7 +29,9 @@ class ZooTest {
         Nightingale nightingale = new Nightingale("Nightingale", "grey", 0.1, 60, 0.4, 5, true, "Nightingale");
         Stork stork = new Stork("Stork", "white", 3.1, 45, 3.5, 9, true, "Stork");
         zoo = new Zoo();
-        birds = new Bird();
+        zoo.addBirds();
+        zoo.foundBirds();
+
 
     }
 
@@ -58,22 +60,8 @@ class ZooTest {
 
     }
 
-
-    @Test
-    void testFoundBirds() {
-        zoo.addBirds();
-        var result = zoo.foundBirds();
-        Assertions.assertEquals(3, result.size());
-        Assertions.assertEquals("Nightingale", result.get(0).getName());
-        Assertions.assertEquals("Stork", result.get(1).getName());
-        Assertions.assertEquals("Swallow", result.get(2).getName());
-
-    }
-
     @Test
     void testSortByWeightAsc() {
-        zoo.addBirds();
-        zoo.foundBirds();
         var result = zoo.sortByWeightAsc();
         Assertions.assertEquals(3, result.size());
         Assertions.assertEquals("Nightingale", result.get(0).getName());
@@ -84,8 +72,6 @@ class ZooTest {
 
     @Test
     void testSortByWeightDesc() {
-        zoo.addBirds();
-        zoo.foundBirds();
         var result = zoo.sortByWeightDesc();
         Assertions.assertEquals(3, result.size());
         Assertions.assertEquals("Stork", result.get(0).getName());
@@ -96,8 +82,6 @@ class ZooTest {
 
     @Test
     void testSortByFeedAsc() {
-        zoo.addBirds();
-        zoo.foundBirds();
         var result = zoo.sortByFeedAsc();
         Assertions.assertEquals(3, result.size());
         Assertions.assertEquals("Swallow", result.get(0).getName());
@@ -108,8 +92,6 @@ class ZooTest {
 
     @Test
     void testSortByFeedDesc() {
-        zoo.addBirds();
-        zoo.foundBirds();
         var result = zoo.sortByFeedDesc();
         Assertions.assertEquals(3, result.size());
         Assertions.assertEquals("Stork", result.get(0).getName());
