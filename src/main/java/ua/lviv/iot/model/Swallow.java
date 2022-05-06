@@ -9,4 +9,14 @@ public class Swallow extends Bird {
         this.typeOfSwallow = typeOfSwallow;
     }
 
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + ", type of swallow";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + ", " + typeOfSwallow;
+    }
 }
+

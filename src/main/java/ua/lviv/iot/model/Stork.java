@@ -9,4 +9,14 @@ public class Stork extends Bird {
         this.typeOfStork = typeOfStork;
     }
 
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + ", type of stork";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + ", " + typeOfStork;
+    }
 }
+

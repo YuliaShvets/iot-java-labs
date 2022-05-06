@@ -1,5 +1,18 @@
 package ua.lviv.iot.model;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Bird {
     private String name;
     private String colour;
@@ -10,41 +23,11 @@ public class Bird {
     private boolean isBirdFlying;
 
 
-    public boolean isBirdFlying() {
-        return isBirdFlying;
+    public String getHeaders() {
+        return "Name, colour, speed";
     }
 
-    public double getWeight() {
-        return weight;
-    }
-
-    public double getFeed() {
-        return feed;
-    }
-
-    public Bird(String name, String colour, double weight, double speed, double feed, int lifeTime, boolean isBirdFlying) {
-        this.name = name;
-        this.colour = colour;
-        this.weight = weight;
-        this.speed = speed;
-        this.feed = feed;
-        this.lifeTime = lifeTime;
-        this.isBirdFlying = isBirdFlying;
-    }
-
-    public Bird() {
-    }
-
-    @Override
-    public String toString() {
-        return "Bird{" +
-                "name='" + name + '\'' +
-                ", colour='" + colour + '\'' +
-                ", weight=" + weight +
-                ", speed=" + speed +
-                ", feed=" + feed +
-                ", lifeTime=" + lifeTime +
-                ", isBirdFlying=" + isBirdFlying +
-                '}';
+    public String toCSV() {
+        return this.getName() + ", " + this.getColour() + ", " + this.getSpeed();
     }
 }

@@ -12,6 +12,7 @@ import java.util.Comparator;
 
 public class Zoo {
     ArrayList<Bird> birds = new ArrayList<Bird>();
+    ArrayList<Bird> found = new ArrayList<Bird>();
 
     public void addBirds() {
 
@@ -22,8 +23,6 @@ public class Zoo {
         birds.add(new Swallow("Swallow", "black and white", 0.13, 55, 0.379, 4, true, "Swallow"));
 
     }
-
-    ArrayList<Bird> found = new ArrayList<Bird>();
 
     public ArrayList<Bird> foundBirds() {
 
