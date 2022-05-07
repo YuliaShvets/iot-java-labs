@@ -1,9 +1,3 @@
-
-Task 4 :
-- You should write unit tests to your project
-- 80% test coverage
-- mvn clean test
-
 Task 5 :
 - You should write .csv file for your project
 - Method writeCSV(); should be in separate class "Writer"
@@ -11,11 +5,14 @@ Task 5 :
 - Spotbugs and Checkstyle
 - mvn clean site
 
+Task 4 :
+- You should write unit tests to your project
+- 80% test coverage
+- mvn clean test
 
 Task 3 :
 - Add maven support to the project
 - mvn clean package
-
 
 Task 2 :
 - Implement sorting of objects (ascending and descending).
