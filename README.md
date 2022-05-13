@@ -1,3 +1,9 @@
+
+Task 6 :
+- Write code with regular expression
+- Java code convention
+- Tests for class with regex
+
 Task 5 :
 - You should write .csv file for your project
 - Method writeCSV(); should be in separate class "Writer"
