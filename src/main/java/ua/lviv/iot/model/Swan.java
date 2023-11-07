@@ -1,12 +1,12 @@
 package ua.lviv.iot.model;
 
 public class Swan extends Bird {
-    private String typeOfSwan;
+    private String typeOfSwans;
 
-    public Swan(String name, String colour, double weight, double speed, double feed, int lifeTime, boolean isBirdFlying, String typeOfSwan) {
+    public Swan(String name, String colour, double weight, double speed, double feed, int lifeTime, boolean isBirdFlying, String typeOfSwans) {
 
         super(name, colour, weight, speed, feed, lifeTime, isBirdFlying);
-        this.typeOfSwan = typeOfSwan;
+        this.typeOfSwans = typeOfSwans;
     }
 
     @Override
@@ -16,7 +16,6 @@ public class Swan extends Bird {
 
     @Override
     public String toCSV() {
-        return super.toCSV() + ", " + typeOfSwan;
+        return super.toCSV() + ", " + typeOfSwans;
     }
 }
-
