@@ -1,12 +1,12 @@
 package ua.lviv.iot.model;
 
 public class Stork extends Bird {
-    private String typeOfStork;
+    private String typeOfStorks;
 
-    public Stork(String name, String colour, double weight, double speed, double feed, int lifeTime, boolean isBirdFlying, String typeOfStork) {
+    public Stork(String name, String colour, double weight, double speed, double feed, int lifeTime, boolean isBirdFlying, String typeOfStorks) {
 
         super(name, colour, weight, speed, feed, lifeTime, isBirdFlying);
-        this.typeOfStork = typeOfStork;
+        this.typeOfStorks = typeOfStorks;
     }
 
     @Override
@@ -16,7 +16,6 @@ public class Stork extends Bird {
 
     @Override
     public String toCSV() {
-        return super.toCSV() + ", " + typeOfStork;
+        return super.toCSV() + ", " + typeOfStorks;
     }
 }
-
